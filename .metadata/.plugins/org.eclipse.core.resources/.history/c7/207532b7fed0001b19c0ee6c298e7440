@@ -1,0 +1,10 @@
+package com.codefresher.service;
+
+import java.util.List;
+
+import com.codefresher.model.Student;
+
+public interface StudentService {
+    // get all user
+    java.util.List<Student> getAllUSer();
+}

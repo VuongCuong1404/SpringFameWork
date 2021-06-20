@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Lesion8Application<Lesion8>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.codefresher.Lesion8Application",
+            "projectName": "Lesion8",
+            "args": ""
+        }
+    ]
+}

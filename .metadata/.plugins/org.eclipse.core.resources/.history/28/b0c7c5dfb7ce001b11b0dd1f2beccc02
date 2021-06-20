@@ -1,0 +1,5 @@
+package com.codefresher.repository;
+
+public class StudentRepositiry {
+
+}

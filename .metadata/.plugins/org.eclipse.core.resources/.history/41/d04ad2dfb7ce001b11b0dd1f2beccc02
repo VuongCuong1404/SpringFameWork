@@ -1,0 +1,5 @@
+package com.codefresher.model;
+
+public class Student {
+
+}

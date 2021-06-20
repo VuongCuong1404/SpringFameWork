@@ -1,0 +1,23 @@
+package com.codefresher.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codefresher.model.Users;
+import com.codefresher.repository.UserRepository;
+
+@Service
+public class StudentServiceImpl {
+
+	@Autowired
+	UserRepository userRepository;
+
+	@Override
+	public List<Users> getAllStudent() {
+		// TODO Auto-generated method stub
+		List<Student> rs = userRepository.findAll();
+		return rs;
+	}
+}
