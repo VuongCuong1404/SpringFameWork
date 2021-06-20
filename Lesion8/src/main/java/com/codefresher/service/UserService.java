@@ -1,0 +1,14 @@
+package com.codefresher.service;
+
+import com.codefresher.model.Users;
+
+import antlr.collections.List;
+
+public interface UserService {
+		//getAllUser
+	java.util.List<Users> getAllUser();
+	
+	Users insertUser(Users user);
+	
+	Users getById(int id);
+}
