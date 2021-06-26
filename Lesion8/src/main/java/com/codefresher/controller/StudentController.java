@@ -8,13 +8,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import com.codefresher.model.Student;
-
 import com.codefresher.service.StudentService;
 
 @Controller
 public class StudentController {
+	
 	@Autowired
 	StudentService studentService;
 
@@ -24,14 +23,14 @@ public class StudentController {
 
 		List<Student> rs = studentService.getAllStudent();
 		model.addAttribute("student", rs);
-		return "listStudent";
+		return "/student/listStudent";
 
 	}
 
 	@RequestMapping(value = "/addStudent", method = RequestMethod.GET)
 	public String addStudent(Model model) {
 		model.addAttribute("studentModel", new Student());
-		return "addStudent";
+		return "/student/addStudent";
 	}
 
 	@RequestMapping(value="/addStudent", method=RequestMethod.POST)

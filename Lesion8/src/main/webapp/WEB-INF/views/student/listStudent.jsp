@@ -19,20 +19,20 @@
   
   <table border="1">
 		<tr>
-			<th>Id</th>
-			<th>User name</th>
-			<th>Password</th>
-			<th>Address</th>
+			<th>ID</th>
+			<th>họ Tên</th>
+			<th>Ngày Sinh</th>
+			<th>Đại Chỉ</th>
 			
 		</tr>
 		
-		<c:forEach var="u" items="${users}">
+		<c:forEach var="u" items="${student}">
 			<tr>
 				<td>${u.id} </td>
-				<td>${u.username} </td>
-				<td>${u.password} </td>
-				<td>${u.address} </td>
-				<td> <button> <a href="/user/${u.id}">View</a>
+				<td>${u.hoTen} </td>
+				<td>${u.ngaySinh} </td>
+				<td>${u.diaChi} </td>
+				<td> <button> <a href="/student/${u.id}">View</a>
 				
 				</button>
 				 </td>

@@ -2,9 +2,10 @@ package com.codefresher.service.impl;
 
 import java.util.List;
 
-import org.apache.catalina.User;
+// import org.apache.catalina.User;
+// import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+// import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 import com.codefresher.model.Users;
@@ -13,8 +14,6 @@ import com.codefresher.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{
-	
-	
 	
 	@Autowired
 	UserRepository userRepository;
@@ -37,6 +36,28 @@ public class UserServiceImpl implements UserService{
 		
 		return userRepository.getById(id);
 	}
+
+	@Override
+	public Users updateUser(Users user) {
+		// TODO Auto-generated method stub
+		return userRepository.save(user);
+	}
+
+	@Override
+	public void deleteUsers(int id) {
+		// TODO Auto-generated method stub
+		 userRepository.deleteById(id);
+	}
+
+	//search 
+	@Override
+	public List<Users> searchByUserName(String inputSearch) {
+		// TODO Auto-generated method stub
+		return userRepository.getByUserName(inputSearch);
+	}
+
+	
+	
 	
 	
 }

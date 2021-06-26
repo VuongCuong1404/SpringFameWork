@@ -14,6 +14,7 @@
   <a href="/listUser"> List User </a> <br>
   <a href="/addUser"> Add User </a> <br>
   <a href="/userdetail"> User Detail</a> <br>
+  <a href="/searchuser"> Search USer</a> <br>
   
   <a href="/listStudent"> List Student</a> <br>
   <a href="/addStudent"> Add Student</a>

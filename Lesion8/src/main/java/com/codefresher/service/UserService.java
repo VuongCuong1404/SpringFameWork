@@ -1,8 +1,8 @@
 package com.codefresher.service;
 
-import com.codefresher.model.Users;
+import java.util.List;
 
-import antlr.collections.List;
+import com.codefresher.model.Users;
 
 public interface UserService {
 		//getAllUser
@@ -11,4 +11,12 @@ public interface UserService {
 	Users insertUser(Users user);
 	
 	Users getById(int id);
+
+    Users updateUser(Users user);
+
+	//delete user 
+	void deleteUsers(int id);
+
+	//search by username
+	List<Users> searchByUserName(String inputSearch);
 }

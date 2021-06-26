@@ -8,22 +8,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "sinhvien")
+@Table(name = "student")
 
 public class Student {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
+	@Column(name= "id")
 	private int id;
 
-	@Column(name = "hoten")
+	@Column(name = "hoTen")
 	private String hoTen;
 
-	@Column(name = "ngaysinh")
+	@Column(name = "ngaySinh")
 	private String ngaySinh;
 
-	@Column(name = "diachi")
+	@Column(name = "diaChi")
 	private String diaChi;
 
 	
